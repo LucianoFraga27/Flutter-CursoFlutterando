@@ -25,3 +25,16 @@ Criando método para separar os widgets
 Organizar o código
 
 # Aula 14
+
+Multi Render
+
+Columns
+
+# Aula 15
+
+Multi Render
+
+Row
+
+
+
