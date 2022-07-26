@@ -18,14 +18,11 @@ class HomePageState extends State<HomePage> {
     return Scaffold(
         appBar: AppBar(
           title: Text('Curso Flutterando'),
+          actions: [
+            CustomSwitcher()
+          ]
         ),
         body: Center(
-          child: Switch(
-            value: AppController.instance.isDarkTheme,
-            onChanged: (value){
-              AppController.instance.changeTheme();
-          },
-          )
         ),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.add),
@@ -35,5 +32,20 @@ class HomePageState extends State<HomePage> {
             });
           },
         ));
+  }
+}
+
+
+class CustomSwitcher extends StatelessWidget {
+  const CustomSwitcher({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Switch(
+      value: AppController.instance.isDarkTheme,
+      onChanged: (value){
+        AppController.instance.changeTheme();
+      },
+    );
   }
 }

@@ -20,3 +20,8 @@ Dark Mode, Light Mode
 
 # Aula 13
 
+Componentização de widgets
+Criando método para separar os widgets
+Organizar o código
+
+# Aula 14
