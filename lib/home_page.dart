@@ -20,12 +20,28 @@ class HomePageState extends State<HomePage> {
         body: Container(
           width: double.infinity,
           height: double.infinity,
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Text(
-              'N: $counter',
-              style: TextStyle(fontSize: 30),
-            ),
+          child: ListView(
+            scrollDirection: Axis.vertical,
+              //mainAxisAlignment: MainAxisAlignment.center, children: [
+            children: [
+              Text(
+                'N: $counter',
+                style: TextStyle(fontSize: 30),
+              ),
             CustomSwitcher(),
+            // ----
+            Container(height: 70, color: Colors.red),
+            Container(height: 70, color: Colors.grey),
+            Container(height: 70, color: Colors.blue),
+            Container(height: 70, color: Colors.yellow),
+            Container(height: 70, color: Colors.pink),
+            Container(height: 70, color: Colors.greenAccent),
+            Container(height: 70, color: Colors.redAccent),
+            Container(height: 70, color: Colors.blueGrey),
+            Container(height: 70, color: Colors.black45),
+            Container(height: 70, color: Colors.lightGreenAccent),
+            // ----
+
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
