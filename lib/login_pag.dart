@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'home_page.dart';
-
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -26,6 +24,13 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                Container(
+                  height: 100,
+                  width: 100,
+                  child: Image.network(
+                    "https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-1.png",),
+                ),
+                Container(height: 40),
                 TextField(
                   onChanged: (text){
                     email = text;
