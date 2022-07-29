@@ -27,8 +27,7 @@ class _LoginPageState extends State<LoginPage> {
                 Container(
                   height: 100,
                   width: 100,
-                  child: Image.network(
-                    "https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-1.png",),
+                  child: Image.asset("assets/images/logo.png"),
                 ),
                 Container(height: 40),
                 TextField(
