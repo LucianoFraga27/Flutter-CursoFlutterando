@@ -1,3 +1,4 @@
+import 'package:curso02_flutter/login_pag.dart';
 import 'package:flutter/material.dart';
 import 'app_controller.dart';
 import 'home_page.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
               primarySwatch: Colors.red,
               brightness: AppController.instance.isDarkTheme ? Brightness.dark: Brightness.light
           ),
-          home: HomePage(),
+          home: LoginPage(),
         );
       },);
   }
