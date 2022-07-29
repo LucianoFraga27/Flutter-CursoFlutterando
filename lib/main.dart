@@ -21,7 +21,11 @@ class MyApp extends StatelessWidget {
               primarySwatch: Colors.red,
               brightness: AppController.instance.isDarkTheme ? Brightness.dark: Brightness.light
           ),
-          home: LoginPage(),
+          initialRoute: '/',
+          routes: {
+            '/':(cotext) => LoginPage(),
+            '/home':(cotext) => HomePage(),
+          }
         );
       },);
   }

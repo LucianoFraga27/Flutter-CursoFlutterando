@@ -51,11 +51,9 @@ class _LoginPageState extends State<LoginPage> {
                 RaisedButton(onPressed: () {
                   if (email == 'lc@gl.com' && password == '123'){
                     print("correto");
-                    Navigator.of(context).pushReplacement(
-                      // push
-                      // push replacement
-                      MaterialPageRoute(builder: (context) => HomePage())
-                    );
+                    Navigator.of(context).pushNamed('/home');
+                    //push Named
+                    // push Replacement Named
                   } else {
                     print("incorreto");
                   }
