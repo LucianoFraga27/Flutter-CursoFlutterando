@@ -48,40 +48,57 @@ class _LoginPageState extends State<LoginPage> {
                 child: Image.asset("assets/images/logo.png"),
               ),
               Container(height: 40),
-              TextField(
-                onChanged: (text){
-                  email = text;
-                },
-                keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(
-                    labelText: "Email",
-                    border: OutlineInputBorder()
-                ),
-              ),
-              Container(height: 10),
-              TextField(
-                onChanged: (text){
-                  password = text;
-                },
-                obscureText: true,
-                decoration: InputDecoration(
-                    labelText: "Password",
-                    border: OutlineInputBorder()
-                ),
-              ),
-              Container(height: 10),
-              RaisedButton(onPressed: () {
-                if (email == '@' && password == '123'){
-                  print("correto");
-                  Navigator.of(context).pushNamed('/home');
-                  //push Named
-                  // push Replacement Named
-                } else {
-                  print("incorreto");
-                }
+              Card(
+                child:Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Column(
+                    children: [
+                      TextField(
+                        onChanged: (text){
+                          email = text;
+                        },
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: InputDecoration(
+                            labelText: "Email",
+                            border: OutlineInputBorder()
+                        ),
+                      ),
+                      Container(height: 10),
+                      TextField(
+                        onChanged: (text){
+                          password = text;
+                        },
+                        obscureText: true,
+                        decoration: InputDecoration(
+                            labelText: "Password",
+                            border: OutlineInputBorder()
+                        ),
+                      ),
+                      Container(height: 10),
+                      RaisedButton(
+                          color: Colors.red,
+                          textColor: Colors.white,
+                          onPressed: () {
+                        if (email == '@' && password == '123'){
+                          print("correto");
+                          Navigator.of(context).pushNamed('/home');
+                          //push Named
+                          // push Replacement Named
+                        } else {
+                          print("incorreto");
+                        }
 
-              },
-              child: Text("Entrar!"))
+                      },
+                          child: Container(
+                              width: double.infinity,
+                              child: Text(
+                                "Entrar!",
+                                textAlign: TextAlign.center,))
+                      )
+                    ],
+                  ),
+                )
+              ),
             ],
           ),
         ),
