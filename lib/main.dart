@@ -1,4 +1,5 @@
 import 'package:curso02_flutter/login_pag.dart';
+import 'package:curso02_flutter/tela_tinder.dart';
 import 'package:flutter/material.dart';
 import 'app_controller.dart';
 import 'home_page.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
           routes: {
             '/':(cotext) => LoginPage(),
             '/home':(cotext) => HomePage(),
+            '/telatinder':(cotext) => TelaTinder(),
           }
         );
       },);
