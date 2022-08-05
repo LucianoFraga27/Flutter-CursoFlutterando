@@ -97,24 +97,4 @@ print("home");
 
 ClipRRect
 
-# Aula 27
-
-# Aula 28
-
-# Aula 29
-
-# Aula 30
-# Aula 31
-# Aula 32
-# Aula 33
-# Aula 34
-# Aula 35
-# Aula 36
-# Aula 37
-# Aula 38
-# Aula 39
-# Aula 40
-
-
-
 
