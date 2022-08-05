@@ -77,8 +77,25 @@ Material Card
 # Aula 25
 
 Drawer
-
+drawer:Drawer(
+child: Column(
+children: [
+UserAccountsDrawerHeader(
+currentAccountPicture: Image.network("https://png.pngtree.com/element_origin_min_pic/00/00/06/12575cb97a22f0f.jpg"),
+accountName: Text("Usuario"),
+accountEmail: Text("usuario@email.com"),
+),
+ListTile(
+title: Text("Inicio"),
+subtitle: Text("Tela inicial"),
+leading: Icon(Icons.home),
+onTap: () {
+print("home");
+}
+),
 # Aula 26
+
+ClipRRect
 
 # Aula 27
 

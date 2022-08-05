@@ -19,7 +19,9 @@ class HomePageState extends State<HomePage> {
           child: Column(
             children: [
               UserAccountsDrawerHeader(
-                  currentAccountPicture: Image.network("https://png.pngtree.com/element_origin_min_pic/00/00/06/12575cb97a22f0f.jpg"),
+                  currentAccountPicture: ClipRRect( //ClipOval
+                    borderRadius: BorderRadius.circular(40),
+                      child: Image.network("https://png.pngtree.com/element_origin_min_pic/00/00/06/12575cb97a22f0f.jpg")),
                   accountName: Text("Usuario"),
                   accountEmail: Text("usuario@email.com"),
               ),
